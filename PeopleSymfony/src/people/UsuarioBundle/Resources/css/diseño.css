@@ -1,0 +1,141 @@
+@CHARSET "ISO-8859-1";
+#contenedor{
+	width:100%;
+	
+}
+/*header*/
+#header{
+	
+	width:100%;
+	background:#000099;
+border:1px solid red;
+	
+}/* fin header*/
+
+/*Logo*/
+#logo{
+ 	display:inline-block;
+ 	width:30%;
+	border:1px solid white;
+	color:white;
+	margin-right:10px;
+	maring-top:0px;
+	
+}
+#logo ul{
+	list-style:none;
+	font-family:Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif;
+}
+
+#logo ul #principal{
+	
+	font-size:35px;
+	padding-left:30px;
+}
+#logo ul #superior{
+	
+	font-size:20px;
+}
+#logo ul #inferior{
+	
+	font-size:16px;
+	padding-left:50px;
+}/*fin logo*/
+
+/*Login*/
+#login{
+  display: inline-block;
+  margin: 10px auto;
+  width: 30%;
+  padding: 10px;
+  border:1px solid white;
+}
+.box-title{
+  color: #fff;
+  margin: 5px 5px 5px 5px;
+  text-align:center;
+  font-size:18px;
+  height:22px;
+}
+
+.form-login{
+	width:80%;
+	margin:0 auto;
+	border:1px solid red;
+	overflow:hidden;
+	
+}
+.u-form-group{
+  width:100%;
+  margin-bottom: 10px;
+  color:white;
+}
+.u-form-group input[type="text"],
+.u-form-group input[type="password"], .u-form-group input[type="email"]{
+  width: 100%;
+  height:25px;
+  outline: none;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  color: #333;
+  font-size:0.8rem;
+  -webkit-transition:all 0.1s linear;
+  -moz-transition:all 0.1s linear;
+  transition:all 0.1s linear;
+}
+.u-form-group input:focus{
+  border-color: #358efb;
+}
+.u-form-group button{
+  width:30%;
+  background-color: #1CB94E;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 11px;
+  font-weight: normal;
+  padding: 5px 5px 5px 5px;
+  border-radius: 2px;
+  float:right;
+}/* fin Login*/
+	
+#register{
+ width:30%;	
+ border:1px solid white;
+ display:inline-block;
+	
+}
+
+/*Filtro*/
+#filter{
+	margin-top:10px;
+	
+}/* fin Filtro */
+
+#contenido{
+	background:white;
+	height:300px;
+	
+}
+#contenido #lateral1{
+	width:19%;
+     display:inline-block;
+	height:300px;
+	border:1px solid green;
+
+}
+#contenido #principal{
+	 display:inline-block;
+	width:57%;
+	height:300px;
+	border:1px solid green;
+}
+
+#contenido #lateral2{
+	width:19%;
+	height:300px;
+	border:1px solid green;
+	 display:inline-block;
+
+}
+

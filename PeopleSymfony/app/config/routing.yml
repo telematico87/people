@@ -1,0 +1,7 @@
+
+# Rutas importadas del bundle UsuarioBundle
+UsuarioBundle:
+    resource: "@UsuarioBundle/Resources/config/routing.yml"
+    prefix:   /
+
+ 

@@ -1,0 +1,132 @@
+{% extends 'UsuarioBundle:Default:base.html.twig' %}
+
+{% block body %}
+
+<div id="contenedor">
+ <!--Header-->
+<div id="header">
+ <!--logo-->
+<div id="logo">
+<ul>
+<li id="superior"> Bienvenido a </li>
+<li id="principal"> People</li>
+<li id="inferior"> Expresate, comparte y conoce</li>
+</ul>
+</div> <!--Finlogo-->
+
+ <!--Login-->
+<div id="login">
+    <h2 class="box-title">Identificarse</h2>
+    <form class="form-login" action="{{ path('check_login') }}" method="post">
+      <div class="u-form-group">
+        <input type="text" name="nombre" placeholder="Usuario"/>
+      </div>
+      <div class="u-form-group">
+      <input type="checkbox" checked >No cerrar sesi&oacute;n </input>
+      </div>
+      <div class="u-form-group">
+        <input type="password" name="password" placeholder="Contrase&ntilde;a"/>
+      </div>
+        <div class="u-form-group">
+        <a> Recuperar Contrase&ntilde;a</a>
+      </div>
+      
+      <div class="u-form-group">
+        <button>Entrar</button>
+      </div>
+     
+    </form>
+   
+  </div> <!-- fin Login-->
+ 
+ <!--Registro-->
+<div id="register">
+    <h2 class="box-title">Registrese</h2>
+    <form class="form-login" action="{{ path('check_register') }}" method="post">
+      <div class="u-form-group">
+        <input type="text" name="nombre" placeholder="Nombre completo"/>
+      </div>
+      <div class="u-form-group">
+        <input type="email" name="correo" placeholder="Correo electr&oacutenico"/>
+      </div>
+        <div class="u-form-group">
+        <input type="password" name="password" placeholder="Password"/>
+      </div>
+      
+      <div class="u-form-group">
+        <button>Registrarse</button>
+      </div>
+   </form>
+
+</div> <!--fin Registro-->
+
+<!--filter-->
+
+<div id="filter">
+<select class="selectpicker">
+    <option>Espa&ntilde;ol</option>
+    <option>Ingles</option>
+    <option>Germany</option>
+  </select>
+</div> 
+<!--fin filter-->
+ </div> <!-- fin Header-->
+
+<!-- Contenido -->
+<div id="contenido">
+ 
+ 
+
+<div id="lateral1"></div>
+
+
+<div id="principal">
+
+<div id="postswrapper">
+   <div class="item"> 
+   <ul> 
+   
+   <li>{{ temas.GetObj(0).titulo   }}</li>
+   
+    
+   
+   </ul>
+   </div>
+   
+
+        
+  
+    
+   <div id="loadmoreajaxloader" style="display:none;"><center><img src="loading.gif" /></center></div>
+</div>
+
+</div>
+
+<div id="lateral2"></div>
+</div>
+<!-- fin contenido -->
+<div id="pie">
+</div>
+</div>
+{% endblock %}
+
+{% block javascripts %}
+    {% javascripts
+       '@UsuarioBundle/Resources/js/jquery-2.1.4.min.js'
+        '@UsuarioBundle/Resources/js/scrolling.js'
+    %}
+        <script type="text/javascript" src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+{% endblock %}
+
+{% block stylesheets %}
+{% stylesheets '@UsuarioBundle/Resources/css/diseño.css' %}
+<link href="{{ asset_url }}" rel="stylesheet" type="text/css" />
+{% endstylesheets %}
+{% endblock %}
+
+{% block image %}
+    {% image '@UsuarioBundle/Resources/images/Spain.png'  output="images/Spain.png" %}
+      <img src="{{ asset_url }}"  alt="my alt of image" class="pull-left">
+{% endimage %}
+{% endblock %}

@@ -1,0 +1,25 @@
+
+index:
+
+    path:    /
+    defaults:  { _controller: UsuarioBundle:Default:index }
+ 
+login:
+   
+    path:    /login
+    defaults:  { _controller: UsuarioBundle:Default:login }
+    
+check_login:
+   path: /check_login
+   defaults:  { _controller: UsuarioBundle:Default:check_login }
+   
+check_register:
+ 
+  path: /check_register
+  defaults:  { _controller: UsuarioBundle:Default:check_register }
+  
+  
+scrolling:
+
+ path: /scrolling
+ defaults: {_controller: UsuarioBundle:Default:scrolling }
